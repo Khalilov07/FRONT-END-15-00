@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CourseItem from "./components/CourseItem/CourseItem";
 
 function App() {
+  //             0     1      2
+  // const array = [1, "Hello", false]
+
+  // console.log(array[0])
+  // console.log(array[0])
+  // console.log(array[1])
+
+  // props - объект с данными которые передаются в компонент
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>CATS</h1>
+
+      <div className="coursesList">
+        <CourseItem
+          title={"HTML PROPS"}
+          duration={"3"}
+          descr={"Html - course its like"}
+        />
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// import - мы что запршиваем компонент
+// Import "название компонента" from (из или от куда) ""
